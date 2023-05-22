@@ -5,6 +5,6 @@ _By using this app, you can be informed about sudden changes in the price of  cr
 
 ## Features
 - Foreground service for checking prices 
-- Sset list of currency to check their prices
+- Set list of currency to check their prices
 - Display the notification when the currency reaches the desired price
 - Using the nobitex api to get prices
