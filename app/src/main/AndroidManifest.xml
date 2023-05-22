@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nobialert">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/coin"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/coin"
+        android:theme="@style/Theme.NobiAlert">
+        <activity android:name=".MainActivity"
+            android:label="هشدار نوبیتکس"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ListActivity"
+            android:label="آیتم های اضافه شده"
+            android:screenOrientation="portrait"/>
+
+        <service
+            android:name=".NobiAlert"
+            android:enabled="true"/>
+
+    </application>
+
+</manifest>

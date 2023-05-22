@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|center_horizontal"
+    android:background="#1B1B1B"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:layout_height="50dp"
+        android:layout_width="200dp"
+        android:id="@+id/name"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#F44336"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/minusbtn"
+            android:layout_weight="0.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="-"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/price"
+            android:layout_weight="4"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@drawable/etshape"
+            android:gravity="center"
+            android:hint="قیمت"
+            android:inputType="number"
+            android:textColor="#BFBFBF"
+            android:textColorHint="#BFBFBF" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/plusbtn"
+            android:layout_weight="0.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="+"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/decrease"
+            android:checked="true"
+            android:text="کاهش"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginRight="20dp"
+            android:buttonTint="#F44336"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/increase"
+            android:text="افزایش"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/white"
+            android:buttonTint="#F44336"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/add"
+        android:layout_height="60dp"
+        android:layout_width="250dp"
+        android:background="@drawable/btshape"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:text="افزودن"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/start"
+        android:layout_height="60dp"
+        android:layout_width="250dp"
+        android:background="@drawable/btshape"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:text="شروع"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/stop"
+        android:layout_height="60dp"
+        android:layout_width="250dp"
+        android:background="@drawable/btshape"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:text="توقف"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/look"
+        android:layout_height="60dp"
+        android:layout_width="250dp"
+        android:background="@drawable/btshape"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:text="لیست ارزها"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_marginTop="5dp"
+        android:text="Please go to Phone settings > Battery > App launch and then set this app to “Manage manually” and make sure everything is turned on"
+        android:textColor="#BCBCBC"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+
